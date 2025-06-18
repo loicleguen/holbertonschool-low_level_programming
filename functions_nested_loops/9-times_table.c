@@ -1,24 +1,31 @@
 #include "main.h"
 
 /**
- * _abs - computes the absolute value of an integer
- * @n: int
- * Return: Always "n"
+ * times_table - prints the 9 times table
  */
 
-int _abs(int n)
+void times_table(void)
 {
-	if (n < 0)
+	int n, i, j;
+
+	for (i = 0; i <= 9; i++)
 	{
-		n = n * -1;
+		_putchar('0');
+
+		for (j = 1; j <= 9; j++)
+		{
+			_putchar(',');
+			_putchar(' ');
+
+			n = i * j;
+
+			if (n <= 9)
+				_putchar(' ');
+			else
+				_putchar((n / 10) + '0');
+
+			_putchar((n % 10) + '0');
+		}
+		_putchar('\n');
 	}
-	else if (n > 0)
-	{
-		n = n;
-	}
-	else
-	{
-		n = 0;
-	}
-	return (n);
 }
