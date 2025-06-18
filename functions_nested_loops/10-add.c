@@ -1,24 +1,13 @@
 #include "main.h"
 
 /**
- * _abs - computes the absolute value of an integer
- * @n: int
- * Return: Always "n"
+ * add - adds two integers and returns
+ * @i: int
+ * @j: int
+ * Return: Always "i + j"
  */
 
-int _abs(int n)
+int add(int i, int j)
 {
-	if (n < 0)
-	{
-		n = n * -1;
-	}
-	else if (n > 0)
-	{
-		n = n;
-	}
-	else
-	{
-		n = 0;
-	}
-	return (n);
+	return (i + j);
 }
