@@ -2,7 +2,7 @@
 
 /**
  * _islower - checks for lowercase character
- * c - variable alphabetique
+ * @c: alphabetic variable
  * Return: Always 0 1
  */
 
