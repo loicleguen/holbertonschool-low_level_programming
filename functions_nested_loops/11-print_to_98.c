@@ -1,24 +1,35 @@
 #include "main.h"
+#include "stdio.h"
 
 /**
- * _abs - computes the absolute value of an integer
+ * print_to_98 - prints all natural numbers from n to 98
  * @n: int
- * Return: Always "n"
  */
 
-int _abs(int n)
+void print_to_98(int n)
 {
-	if (n < 0)
+	int i;
+
+	if (n <= 98)
 	{
-		n = n * -1;
-	}
-	else if (n > 0)
+		for (i = n; i <= 98; i++)
+		{
+			printf("%d", i);
+			if (i != 98)
+			{
+				printf(", ");
+			}
+		}
+	} else
 	{
-		n = n;
+		for (i = n; i >= 98; i--)
+		{
+			printf("%d", i);
+			if (i != 98)
+			{
+				printf(", ");
+			}
+		}
 	}
-	else
-	{
-		n = 0;
-	}
-	return (n);
+	printf("\n");
 }
