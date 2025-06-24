@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_diagonal - draws a diagonal line
- * @n: int
+ * print_triangle - draws a triangle
+ * @size: int
  */
 
 
@@ -18,10 +18,13 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 			}
-			for (j = -1; j > h; j++)
+			for (j = -1; j < h; j++)
 			{
 				_putchar('#');
 			}
+		_putchar('\n');
 		}
 	}
+	else
+		_putchar('\n');
 }
