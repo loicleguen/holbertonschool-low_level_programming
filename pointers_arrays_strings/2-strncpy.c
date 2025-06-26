@@ -1,27 +1,21 @@
-#include "main.h"
+#include "stdio.h"
 
 /**
- * _strncpy - copying two strings
- * @dest : pointer
- * @src : source pointer
- * @n : integer variable
- * Return: Always 0.
+ * _strncpy - copies the string
+ * @dest: char destination
+ * @src: char source
+ * @n: int
+ * Return: Always (dest) result
  */
+
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0, j = 0;
+	int i;
 
-	for (; i < n && src[i] != '\0'; i++)
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		;
+		dest[i] = src[i];
 	}
-	for (; j < i && src[j] != '\0'; j++)
-	{
-		dest[j] = src[j];
-	}
-	for (; j < n; j++)
-	{
-		dest[j] = '\0';
-	}
+	dest[i] = src[i];
 	return (dest);
 }
