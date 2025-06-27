@@ -13,7 +13,7 @@ char *leet(char *str)
 	char a[] = {'a', 'e', 'o', 't', 'l'};
 	char n[] = {4, 3, 0, 7, 1};
 
-	for (; str[i]; str++)
+	for (; *str; str++)
 	{
 		for (i = 0; i < 5; i++)
 		{
