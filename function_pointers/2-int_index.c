@@ -5,9 +5,8 @@
  * @array: Pointer to the array of integers.
  * @size: Number of elements in the array.
  * @cmp: Pointer to the comparison function.
- *
- * Return: The index for which cmp does not return 0,
- * or -1 if no such element is found or size is less than or equal to 0.
+ * Return: The index for which cmp does not return 0, or -1 if
+ * no such element is found or size is less than or equal to 0.
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
