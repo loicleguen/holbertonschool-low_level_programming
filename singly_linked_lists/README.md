@@ -31,3 +31,6 @@ Clone the repository:
 ```bash
 git clone https://github.com/loicleguen/holbertonschool-low_level_programming/tree/main/singly_linked_lists
 
+Compilation :
+gcc -Wall -Werror -Wextra -pedantic *.c -o linked_lists
+
