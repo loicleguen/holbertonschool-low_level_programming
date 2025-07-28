@@ -34,5 +34,8 @@ git clone https://github.com/loicleguen/holbertonschool-low_level_programming/tr
 ```
 
 Compilation :
+```bash
 gcc -Wall -Werror -Wextra -pedantic *.c -o linked_lists
+```
+
 
