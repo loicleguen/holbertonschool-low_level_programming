@@ -29,5 +29,5 @@ Key features include:
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/C-Singly_linked_lists.git
-cd C-Singly_linked_lists
+git clone https://github.com/loicleguen/holbertonschool-low_level_programming/tree/main/singly_linked_lists
+
