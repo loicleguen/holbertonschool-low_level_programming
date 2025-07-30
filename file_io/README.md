@@ -77,6 +77,8 @@ Permissions du fichier créés : rw------- (0600)
 
 Retourne 1 en succès, -1 en échec
 
+---
+
 2. append_text_to_file
 c
 Copier
@@ -87,6 +89,8 @@ Ajoute du texte à la fin d’un fichier existant
 Ne crée pas le fichier s’il n’existe pas
 
 Retourne 1 en succès, -1 en échec
+
+---
 
 3. Programme cp
 Copie le contenu d’un fichier source vers un fichier de destination
@@ -120,13 +124,17 @@ css
 Copier
 Modifier
 file_io/
-├── 0-read_textfile.c
-├── 1-create_file.c
-├── 2-append_text_to_file.c
-├── 3-cp.c
-├── main.h
-├── README.md
-Style et normes
+    ├── 0-read_textfile.c
+    ├── 1-create_file.c
+    ├── 2-append_text_to_file.c
+    ├── 3-cp.c
+    ├── main.h
+    ├── README.md
+
+    ---
+
+## Style et normes
+
 Respect strict de la norme Betty
 
 Pas d’utilisation de fonctions non autorisées (pas de printf, puts, etc.)
