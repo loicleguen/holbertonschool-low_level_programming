@@ -53,6 +53,7 @@ Ce projet en C permet de manipuler les fichiers en utilisant les appels système
 
 ```c
 ssize_t read_textfile(const char *filename, size_t letters);
+```
 Lit un fichier texte et affiche son contenu sur la sortie standard
 
 Lit au maximum letters caractères
