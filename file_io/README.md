@@ -102,34 +102,24 @@ Permissions de file_to : rw-rw-r-- (0664)
 Gestion complète des erreurs avec codes de sortie spécifiques (97 à 100)
 
 Codes d’erreur du programme cp
-Code	Situation
-97	Mauvais nombre d’arguments
-98	Impossible de lire depuis file_from
-99	Impossible d’écrire dans file_to
-100	Impossible de fermer un descripteur de fichier
+- Code	Situation
+- 97	Mauvais nombre d’arguments
+- 98	Impossible de lire depuis file_from
+- 99	Impossible d’écrire dans file_to
+- 100	Impossible de fermer un descripteur de fichier
 
-Exemple d’utilisation
-bash
-Copier
-Modifier
-$ ./cp source.txt dest.txt
-Si le nombre d’arguments est incorrect :
+---
 
-bash
-Copier
-Modifier
-Usage: cp file_from file_to
-Structure des fichiers
-css
-Copier
-Modifier
+## Structure des fichiers
+
 file_io/
-    ├── 0-read_textfile.c
-    ├── 1-create_file.c
-    ├── 2-append_text_to_file.c
-    ├── 3-cp.c
-    ├── main.h
-    ├── README.md
+├── 0-read_textfile.c
+├── 1-create_file.c
+├── 2-append_text_to_file.c
+├── 3-cp.c
+├── main.h
+├── README.md
+
 
 ---
 
