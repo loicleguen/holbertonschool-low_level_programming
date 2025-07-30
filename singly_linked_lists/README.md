@@ -1,41 +1,79 @@
-# 🏷️ C - Singly linked lists
+# 📂 Singly Linked Lists
+
+![Project Badge](https://img.shields.io/badge/Progress-55.81%25-blue)  
+**C - Singly Linked Lists**  
+**Level:** Novice  
+**Author:** Julien Barbier  
+**Weight:** 1  
+
+> Your score will be updated as you progress.
 
 ---
 
 ## 📝 Description
 
-This project focuses on implementing and manipulating **singly linked lists** in the **C programming language**. It is part of foundational data structure training and provides hands-on practice with pointers, dynamic memory allocation, and basic algorithmic logic.
-
-Key features include:
-
-- Definition of a custom `list_t` struct
-- Adding nodes at the beginning and end of the list
-- Printing all elements of the list
-- Freeing dynamically allocated memory
-- Handling strings using `strdup` and `strlen`
+This project introduces singly linked lists in the C programming language. It emphasizes understanding when and why to use linked lists instead of arrays, and how to implement and manage them using dynamic memory allocation.
 
 ---
 
-## 📦 Installation
+## 📚 Resources
 
-### 🧰 Prerequisites
+**Read or watch:**
+- [Linked Lists - GeeksForGeeks](https://www.geeksforgeeks.org/data-structures/linked-list/)
+- Google
+- YouTube
 
-- UNIX/Linux environment (Ubuntu recommended)
-- GCC compiler
-- `make` utility (optional)
+---
 
-### ⚙️ Local Setup
+## 🎯 Learning Objectives
 
-Clone the repository:
+By the end of this project, you should be able to explain (without using Google):
 
-```bash
-git clone https://github.com/loicleguen/holbertonschool-low_level_programming/tree/main/singly_linked_lists
+- When and why to use linked lists vs arrays
+- How to build and use singly linked lists
 
-```
+---
 
-Compilation :
-```bash
-gcc -Wall -Werror -Wextra -pedantic *.c -o linked_lists
-```
+## 📌 Requirements
+
+### General
+
+- Allowed editors: `vi`, `vim`, `emacs`
+- Compilation: Ubuntu 20.04 LTS with `gcc` and options `-Wall -Werror -Wextra -pedantic -std=gnu89`
+- No global variables
+- No more than 5 functions per file
+- Only allowed C standard functions: `malloc`, `free`, `exit`
+- `printf` only allowed in specific tasks
+- Use of `_putchar` is allowed (do not push `_putchar.c`)
+- Use **Betty** style (`betty-style.pl`, `betty-doc.pl`)
+- All files must end with a new line
+- A `README.md` is required
+- All prototypes must be declared in `lists.h`
+- Header files must be include guarded
+
+---
+
+## 🧱 Data Structure
+
+```c
+/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ */
+typedef struct list_s
+{
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
+
+🗂️ Repository Info
+GitHub Repository: holbertonschool-low_level_programming
+
+Directory: singly_linked_lists
 
 
