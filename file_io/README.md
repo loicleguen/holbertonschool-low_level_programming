@@ -131,7 +131,7 @@ file_io/
     ├── main.h
     ├── README.md
 
-    ---
+---
 
 ## Style et normes
 
