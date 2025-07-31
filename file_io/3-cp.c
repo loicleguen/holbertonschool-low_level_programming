@@ -21,6 +21,23 @@ void print_error(int exit_code, const char *message, const char *arg)
 
 
 /**
+ * _strcmp - compares two strings
+ * @s2: char
+ * @s1: char
+ * Return: Always (0,-1,1) result
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+	while (*s1 == *s2 && *s1 != '\0')
+	{
+		s1++, s2++;
+	}
+	return (*s1 - *s2);
+}
+
+
+/**
  * main - Copies the content of one file to another.
  * @ac: Argument count.
  * @av: Argument vector.
@@ -35,6 +52,8 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 		print_error(97, "Usage: cp file_from file_to\n", "");
+	if (_strcmp(av[1], av[2]) == 0)
+		return (0);
 	fd_from = open(av[1], O_RDONLY);
 	if (fd_from == -1)
 		print_error(98, "Error: Can't read from file %s\n", av[1]);
