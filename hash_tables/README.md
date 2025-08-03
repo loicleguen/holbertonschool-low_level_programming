@@ -1,11 +1,5 @@
 # File I/O in C 🔧
 
-![Badge](https://img.shields.io/badge/Score-97.5%25-brightgreen)  
-📁 **Project:** File I/O  
-🧠 **Level:** Amateur  
-👤 **By:** Julien Barbier  
-🎯 **Directory:** `file_io`  
-📌 **Repo:** [holbertonschool-low_level_programming](https://github.com/holbertonschool-low_level_programming)
 
 ---
 
@@ -51,19 +45,19 @@ This project explores low-level file input/output operations in C using system c
 ## 📂 File Structure
 
 file_io/
-├── 0-read_textfile.c
-├── 1-create_file.c
-├── 2-append_text_to_file.c
-├── 3-cp.c
-├── main.h
-└── README.md
+- ├── 0-read_textfile.c
+- ├── 1-create_file.c
+- ├── 2-append_text_to_file.c
+- ├── 3-cp.c
+- ├── main.h
+- └── README.md
 
 
 ---
 
 ## 🧪 Tasks & Progress
 
-### 0. Tread lightly, she is near ✅
+0. Tread lightly, she is near ✅
 
 Reads a text file and prints it to POSIX stdout.
 
