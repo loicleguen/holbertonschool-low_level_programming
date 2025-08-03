@@ -61,7 +61,6 @@ file_io/
 
 Reads a text file and prints it to POSIX stdout.
 
-```c
 ssize_t read_textfile(const char *filename, size_t letters);
 
 1. Under the snow ✅
